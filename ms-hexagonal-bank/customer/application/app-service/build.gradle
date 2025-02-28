@@ -1,0 +1,16 @@
+
+dependencies {
+
+    implementation project (':data')
+    implementation project (':mysql-repository')
+    implementation project (':rabbit-listener-bus')
+    implementation project (':web')
+
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.8.5'
+
+}
